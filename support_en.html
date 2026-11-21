@@ -1,10 +1,51 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Boxing: Champion Road Support</title><style>body{font-family:-apple-system,'Apple SD Gothic Neo',sans-serif;max-width:860px;margin:0 auto;padding:24px;line-height:1.7;color:#1b2333}h1{font-size:1.6em}table{border-collapse:collapse;font-size:.92em}td,th{border:1px solid #ccd;padding:4px 8px}a{color:#2563eb}</style></head><body><h1>Boxing: Champion Road Support</h1>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><link rel="icon" href="icon.png"><title>Boxing: Champion Road Support</title><style>
+:root{--bg:#f4f5f9;--card:#fff;--ink:#1b2333;--muted:#5b6478;--line:#e3e6ee;--accent:#c8902a;--accent2:#1d2a55;--chip:#eef1f8}
+@media (prefers-color-scheme:dark){:root{--bg:#0d1120;--card:#161c30;--ink:#e8ebf4;--muted:#9aa3b8;--line:#2a3352;--accent:#e2b04a;--accent2:#e8ebf4;--chip:#1f2742}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Pretendard',sans-serif;line-height:1.75;font-size:16px}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+.top{position:sticky;top:0;z-index:5;background:linear-gradient(135deg,#141b38,#24305f);color:#fff;box-shadow:0 2px 12px rgba(0,0,0,.18)}
+.top .in{max-width:960px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;font-weight:800;font-size:17px;letter-spacing:-.2px}
+.brand img{width:36px;height:36px;border-radius:9px;box-shadow:0 2px 6px rgba(0,0,0,.35)}
+.nav{display:flex;gap:6px;margin-left:auto;flex-wrap:wrap}
+.nav a{color:#d9def0;padding:6px 12px;border-radius:999px;font-size:14px;font-weight:600}
+.nav a.on{background:#e2b04a;color:#1b1406}.nav a:hover{text-decoration:none;background:rgba(255,255,255,.12)}.nav a.on:hover{background:#e2b04a}
+.lang{color:#d9def0;font-size:13px;border:1px solid rgba(255,255,255,.35);padding:4px 10px;border-radius:999px}
+.wrap{max-width:960px;margin:0 auto;padding:24px 20px 48px;display:grid;grid-template-columns:220px 1fr;gap:24px}
+.toc{position:sticky;top:76px;align-self:start;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:14px}
+.toc b{display:block;color:var(--muted);font-size:12px;letter-spacing:.06em;margin-bottom:6px}
+.toc a{display:block;color:var(--ink);padding:3px 0;line-height:1.45}.toc a:hover{color:var(--accent)}
+main{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px 32px;min-width:0}
+h1{font-size:26px;line-height:1.35;margin:0 0 6px;letter-spacing:-.4px}
+.meta{color:var(--muted);font-size:13px;margin-bottom:18px}
+h2{font-size:19px;margin:34px 0 10px;padding-top:14px;border-top:1px solid var(--line);letter-spacing:-.2px}
+h2:first-of-type{border-top:0;padding-top:0}
+h3{font-size:16px;margin:22px 0 6px}
+.faq h3{margin:14px 0 0;background:var(--chip);border-radius:10px 10px 0 0;padding:10px 14px}
+.faq h3+p{margin:0 0 4px;background:var(--chip);border-radius:0 0 10px 10px;padding:4px 14px 12px}
+p{margin:8px 0}ul{padding-left:20px;margin:8px 0}li{margin:3px 0}
+.tbl{overflow-x:auto;margin:12px 0;border:1px solid var(--line);border-radius:12px}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th{background:var(--chip);text-align:left;font-weight:700}
+td,th{padding:8px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}tbody tr:nth-child(even) td{background:rgba(127,137,160,.06)}
+foot,.foot{display:block;max-width:960px;margin:0 auto;padding:0 20px 40px;color:var(--muted);font-size:13px;text-align:center}
+.hero{max-width:960px;margin:0 auto;padding:40px 20px 8px;text-align:center}
+.hero img{width:96px;height:96px;border-radius:22px;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.hero h1{font-size:30px;margin:16px 0 6px}.hero p{color:var(--muted);margin:0 auto;max-width:560px}
+.cards{max-width:960px;margin:24px auto 40px;padding:0 20px;display:grid;grid-template-columns:repeat(2,1fr);gap:14px}@media (max-width:560px){.cards{grid-template-columns:1fr}}
+.cards a{display:block;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;color:var(--ink)}
+.cards a:hover{text-decoration:none;border-color:var(--accent);transform:translateY(-1px)}
+.cards b{display:block;font-size:17px;margin-bottom:4px}.cards span{color:var(--muted);font-size:14px}
+@media (max-width:760px){.wrap{grid-template-columns:1fr}.toc{position:static}main{padding:22px 18px}.nav{margin-left:0;width:100%}}
+</style></head><body><header class="top"><div class="in"><a class="brand" href="index.html"><img src="icon.png" alt="">Boxing: Champion Road</a><nav class="nav"><a href="privacy_en.html" class="">Privacy</a><a href="terms_en.html" class="">Terms</a><a href="support_en.html" class="on">Support</a></nav><a class="lang" href="support.html">한국어</a></div></header><div class="wrap"><aside class="toc"><b>CONTENTS</b><a href="#s6">FAQ</a><a href="#s25">Recruitment odds</a><a href="#s33">Business information</a></aside><main class=""><h1>Boxing: Champion Road Support</h1><div class="meta">Last updated 2026-11-21</div>
 <p><a href="support.html">한국어</a></p>
 <ul>
 <li>Email: sungcheol1998@gmail.com (reply within 3 business days)</li>
 <li>Phone: +82 50-6825-8576</li>
 </ul>
-<h2>FAQ</h2>
+<h2 id="s6">FAQ</h2>
 <ul>
 <li><b>Does it need the internet?</b> No. Only purchases need an App Store connection.</li>
 <li><b>Will I lose data if I change devices?</b> Progress is saved on the device and in your own iCloud (no game server). Signed in with the same Apple Account, a reinstall or a new device continues automatically on first launch. Without iCloud, deleting the App removes the progress.</li>
@@ -23,13 +64,13 @@
 <li><b>What is the Skill School?</b> Nine lessons on the Training screen where you learn the advanced moves hands-on against a sparring partner on the real fight screen (spacing, guard and stamina, slip/weave/sway, dodge counters, counter chains, dash and backstep, corner pivot and roll-through, skill commands, final exam). Lessons open in order and pay once, on the first clear: lessons 1–2 give 100 gold and 60 XP, lessons 3, 4 and 6 give 150 gold and 80 XP, lessons 5, 7 and 8 give 200 gold and 100 XP, and lesson 9 (final exam) gives 300 gold, 150 XP and 1 recruit ticket (1,550 gold and 1 ticket in total). XP goes to your main fighter. Stars (up to 3) are a record only and do not change the reward; replays keep your best. There are no knockdowns or KOs in a lesson.</li>
 <li><b>Refunds:</b> Request through reportaproblem.apple.com within 7 days for unused items. When a refund is approved, the currency granted by that purchase is removed once; if already spent, the balance may go negative (&quot;unsettled&quot;) and is offset by later earnings. Fighters and progress are kept.</li>
 </ul>
-<h2>Recruitment odds</h2>
+<h2 id="s25">Recruitment odds</h2>
 <p>Each recruit (1 ticket, whether earned, bought or exchanged for gold) first picks a grade, then one fighter of that grade with equal probability. A 10x recruit equals 10 single recruits in a row.</p>
-<table><tr><th>Grade</th><th>Fighters</th><th>Grade odds</th><th>Per fighter</th></tr><tr><td>SSS</td><td>5</td><td>0.25%</td><td>~0.05%</td></tr><tr><td>SS</td><td>7</td><td>0.8%</td><td>~0.114%</td></tr><tr><td>S</td><td>6</td><td>3%</td><td>~0.5%</td></tr><tr><td>A</td><td>6</td><td>7.5%</td><td>~1.25%</td></tr><tr><td>B</td><td>16</td><td>18%</td><td>~1.125%</td></tr><tr><td>C</td><td>20</td><td>30.45%</td><td>~1.522%</td></tr><tr><td>D</td><td>24</td><td>40%</td><td>~1.667%</td></tr></table>
+<div class="tbl"><table><tr><th>Grade</th><th>Fighters</th><th>Grade odds</th><th>Per fighter</th></tr><tr><td>SSS</td><td>5</td><td>0.25%</td><td>~0.05%</td></tr><tr><td>SS</td><td>7</td><td>0.8%</td><td>~0.114%</td></tr><tr><td>S</td><td>6</td><td>3%</td><td>~0.5%</td></tr><tr><td>A</td><td>6</td><td>7.5%</td><td>~1.25%</td></tr><tr><td>B</td><td>16</td><td>18%</td><td>~1.125%</td></tr><tr><td>C</td><td>20</td><td>30.45%</td><td>~1.522%</td></tr><tr><td>D</td><td>24</td><td>40%</td><td>~1.667%</td></tr></table></div>
 <p>Guarantees (free and paid recruits both count; a counter resets when its grade or better appears; the highest guarantee applies first):</p>
-<table><tr><th>Condition</th><th>Guarantee</th><th>Odds on that recruit</th></tr><tr><td>No A or better in 9 recruits</td><td>10th is A or better</td><td>A 64.935% · S 25.974% · SS 6.926% · SSS 2.165%</td></tr><tr><td>No SS or better in 79 recruits</td><td>80th is SS or better</td><td>SS 76.19% · SSS 23.81%</td></tr><tr><td>No SSS in 199 recruits</td><td>200th is SSS</td><td>SSS 100%</td></tr></table>
+<div class="tbl"><table><tr><th>Condition</th><th>Guarantee</th><th>Odds on that recruit</th></tr><tr><td>No A or better in 9 recruits</td><td>10th is A or better</td><td>A 64.935% · S 25.974% · SS 6.926% · SSS 2.165%</td></tr><tr><td>No SS or better in 79 recruits</td><td>80th is SS or better</td><td>SS 76.19% · SSS 23.81%</td></tr><tr><td>No SSS in 199 recruits</td><td>200th is SSS</td><td>SSS 100%</td></tr></table></div>
 <p>Long-run average including guarantees (exact calculation; not the odds of the next recruit): SSS 0.76% · SS 1.52% · S 4.15% · A 10.38% · B 16.93% · C 28.64% · D 37.62%. One SSS every 132.34 recruits on average.</p>
 <p>Reward-only tickets (do not advance or reset the guarantee counters): B or better: B 60.914% · A 25.381% · S 10.152% · SS 2.707% · SSS 0.846%; S or better: S 74.074% · SS 19.753% · SSS 6.173%; SS or better: SS 76.19% · SSS 23.81%.</p>
 <p>A duplicate raises that fighter by 1 level (the XP needed for the next level; progress into the current level is kept; no change at the top level, Lv.100), keeps learned skills (skills unlocked by the new level are learned with gold on the fighter screen) and grants medals (D 1 · C 2 · B 4 · A 10 · S 25 · SS 60 · SSS 150), exchangeable for a recruit ticket (30) or a grade selector (C 20 · B 50 · A 120 · S 350 · SS 900 · SSS 2,000).</p>
-<h2>Business information</h2>
-<p>Dandokhaengdong · Representative Sungcheol Kim · Business registration 504-63-04314 · Mail-order business report 2026-Seoul Gangseo-2911 · 9-19 Yangcheon-ro 57-gil, Gangseo-gu, Seoul, Republic of Korea</p></body></html>
+<h2 id="s33">Business information</h2>
+<p>Dandokhaengdong · Representative Sungcheol Kim · Business registration 504-63-04314 · Mail-order business report 2026-Seoul Gangseo-2911 · 9-19 Yangcheon-ro 57-gil, Gangseo-gu, Seoul, Republic of Korea</p></main></div><div class="foot">© 2026 Boxing: Champion Road · <a href="support_en.html">Contact</a></div></body></html>
